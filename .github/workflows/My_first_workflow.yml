@@ -1,0 +1,16 @@
+name: my first workflow
+on:
+push :
+branches: -main
+jobs:
+  run-on: ubuntu-latest
+  steps:
+      - uses: actions/checkout@v4
+
+      - run: echo "Workflow started!"
+ - name: Show Current Directory
+        run: pwd
+
+      - name: List Files
+        run: ls -la
+  
